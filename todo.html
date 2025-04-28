@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>할 일 목록</h1>
+            <button id="delete-all-btn">전체 삭제</button>
+        </div>
+
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="할 일을 입력하세요" required>
+            <button type="submit">등록</button>
+        </form>
+
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
