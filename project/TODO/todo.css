@@ -32,7 +32,7 @@ body {
 }
 
 #delete-all-btn {
-    background-color: #ff0000;
+    background-color: #29ff7b;
     color: #ffffff;
     border: none;
     padding: 0.5rem 1rem;
@@ -42,7 +42,7 @@ body {
 }
 
 #delete-all-btn:hover {
-    background-color: #ff3e25;
+    background-color: #00b344;
 }
 
 #todo-form {
