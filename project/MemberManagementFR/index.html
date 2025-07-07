@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 목록</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <h1>회원관리 프로그램</h1>
+
+  <!-- 등록 화면으로 이동 -->
+  <div style="text-align:right;margin-bottom:20px;">
+    <a href="register.html" class="btn btn-primary">➕ 회원 등록</a>
+  </div>
+
+  <!-- 통계 -->
+  <div class="stats">
+    <div class="stat-card"><div class="stat-number" id="totalMembers">0</div><div class="stat-label">총 회원수</div></div>
+    <div class="stat-card"><div class="stat-number" id="maleMembers">0</div><div class="stat-label">남성 회원</div></div>
+    <div class="stat-card"><div class="stat-number" id="femaleMembers">0</div><div class="stat-label">여성 회원</div></div>
+    <div class="stat-card"><div class="stat-number" id="avgAge">0</div><div class="stat-label">평균 나이</div></div>
+  </div>
+
+  <!-- 검색 -->
+  <div class="search-section">
+    <h2>회원 검색</h2>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="이름, 이메일, 연락처로 검색...">
+      <button class="btn btn-primary" id="searchBtn">검색</button>
+      <button class="btn btn-secondary" id="showAllBtn">전체보기</button>
+    </div>
+  </div>
+
+  <!-- 목록 -->
+  <div class="member-list">
+    <h2>회원 목록</h2>
+    <div id="memberTableContainer">
+      <div class="empty-state"><div style="font-size:4em;margin-bottom:20px;">👥</div><p>등록된 회원이 없습니다.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- 전용 JS -->
+<script src="js/index.js"></script>
+</body>
+</html>
